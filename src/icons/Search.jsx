@@ -1,8 +1,4 @@
-export function Search({
-  className = "",
-  fillColor = "#000000",
-  bgColor = "",
-}) {
+export function Search({ className = "", fillColor = "#615D6C", bgColor = "" }) {
   return (
     <div className={bgColor ? `${bgColor} rounded-full p-1` : ""}>
       <svg

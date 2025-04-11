@@ -7,4 +7,6 @@
 }
 @theme {
   --default-font-family: "Plus Jakarta Sans", sans-serif;
+  --text-6xl: 64px;
+  --text-3xl: 28px;
 }

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-[1232px] px-4;
+  }
+}
+@theme {
+  --default-font-family: "Plus Jakarta Sans", sans-serif;
+}

@@ -33,7 +33,7 @@ const cards = [
     bg: "bg-[#EDEEFF]",
   },
 ];
-export default function Section() {
+export default function GamesSection() {
   return (
     <div className="container mx-auto mt-16 mb-16">
       <div className="flex gap-80">

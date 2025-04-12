@@ -9,4 +9,6 @@
   --default-font-family: "Plus Jakarta Sans", sans-serif;
   --text-6xl: 64px;
   --text-3xl: 28px;
+  --width-48: 48%;
+  --tracking-2: -0.1px;
 }

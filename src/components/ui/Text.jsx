@@ -6,17 +6,17 @@ export const textVariants = cva("", {
   variants: {
     variant: {
       sm: "text-sm",
-      base: "text-base",
+      base: "text-sm sm:text-base",
       lg: "text-sm sm:text-lg",
-      xl: "",
-      "3xl": "",
-      "4xl": "",
+      xl: "text-xl",
+      "3xl": "text-2xl sm:text-3xl",
+      "4xl": "text-2xl sm:text-4xl",
       "5xl": "",
       "6xl": "text-3xl md:text-6xl",
     },
     weight: {
+      normal: "font-normal",
       medium: "font-medium",
-      normal: "",
       semibold: "font-semibold",
       extrabold: "font-extrabold",
     },

@@ -2,9 +2,9 @@ export function Crosswords() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="104"
+      width="140"
       height="104"
-      viewBox="0 0 104 104"
+      viewBox="0 0 140 104"
       fill="none"
     >
       <path

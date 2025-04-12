@@ -3,9 +3,9 @@ export function WordswithFriends() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="135"
-      height="140"
-      viewBox="0 0 135 140"
+      width="134"
+      height="120"
+      viewBox="0 0 134 120"
       fill="none"
     >
       <rect width="135" height="140" fill="url(#pattern0_1_1153)" />

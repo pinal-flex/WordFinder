@@ -13,8 +13,8 @@ const buttons = [
 
 export default function HeroSection() {
   return (
-    <div className="container">
-      <div className="bg-[url(assets/images/mobile_background.png)] sm:bg-[url(assets/images/background.png)] bg-cover bg-center rounded-4xl">
+    <div className="container pb-10 pt-5">
+      <div className="bg-[url(assets/images/mobile_background.png)] sm:bg-[url(assets/images/background.png)] bg-cover bg-center rounded-3xl">
         <div className="py-12 sm:py-16 text-center">
           <div className="max-w-xl mx-auto w-full">
             <Text
@@ -53,26 +53,21 @@ export default function HeroSection() {
               </div>
               <div className="border-t border-zinc-300 mt-4 pt-4">
                 <div className="flex flex-wrap whitespace-nowrap gap-2 sm:flex-nowrap">
-                  {buttons.map((button, index) => {
-                    const isLast = index === buttons.length - 1;
-                    return (
-                      <button
-                        key={index}
-                        className={`
-            flex items-center text-sm text-zinc-600 border border-gray-300 rounded-xl
-            px-4 py-2
-            ${isLast ? "w-full sm:w-auto justify-between" : "w-[48%] sm:w-full"}
-          `}
-                      >
-                        <Text variant="sm" weight="medium">
-                          {button.text}
-                        </Text>
-                        {button.icon && (
-                          <span className="ml-1.5">{button.icon}</span>
-                        )}
-                      </button>
-                    );
-                  })}
+                  {buttons.map((button, index) => (
+                    <button
+                      key={index}
+                      className={`flex items-center text-sm text-zinc-600 border border-gray-300 rounded-xl px-4 py-2 w-48 sm:w-full
+      last:w-full last:sm:w-auto last:justify-between
+    `}
+                    >
+                      <Text variant="sm" weight="medium">
+                        {button.text}
+                      </Text>
+                      {button.icon && (
+                        <span className="ml-1.5">{button.icon}</span>
+                      )}
+                    </button>
+                  ))}
                 </div>
               </div>
             </div>

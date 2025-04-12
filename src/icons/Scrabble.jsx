@@ -3,12 +3,12 @@ export function Scrabble() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="214"
-      height="120"
-      viewBox="0 0 214 120"
+      width="130"
+      height="100"
+      viewBox="0 0 130 100"
       fill="none"
     >
-      <rect width="214" height="120" fill="url(#pattern0_56_190)" />
+      <rect width="135" height="90" fill="url(#pattern0_56_190)" />
       <defs>
         <pattern
           id="pattern0_56_190"

@@ -13,7 +13,7 @@ const buttons = [
 
 export default function HeroSection() {
   return (
-    <div className="container pb-10 pt-5">
+    <div className="pb-10 pt-5">
       <div className="bg-[url(assets/images/mobile_background.png)] sm:bg-[url(assets/images/background.png)] bg-cover bg-center rounded-3xl">
         <div className="py-12 sm:py-16 text-center">
           <div className="max-w-xl mx-auto w-full">
@@ -56,10 +56,8 @@ export default function HeroSection() {
                   {buttons.map((button, index) => (
                     <button
                       key={index}
-                      className={`flex items-center text-sm text-zinc-600 border border-gray-300 rounded-xl px-4 py-2 w-48 sm:w-full
-      last:w-full last:sm:w-auto last:justify-between
-    `}
-                    >
+                      className="flex items-center text-sm text-zinc-600 border border-gray-300 rounded-xl px-4 py-2 w-48 sm:w-full
+      last:w-full last:sm:w-auto last:justify-between">
                       <Text variant="sm" weight="medium">
                         {button.text}
                       </Text>

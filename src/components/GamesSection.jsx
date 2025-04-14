@@ -37,7 +37,7 @@ const cards = [
 ];
 export default function GamesSection() {
   return (
-    <div className="container mx-auto pt-10 sm:pt-16 pb-12 sm:pb-14">
+    <div className="mx-auto pt-10 sm:pt-16 pb-12 sm:pb-14">
       <div className="block sm:flex justify-between">
         <Text
           type="h2"

@@ -10,3 +10,6 @@ export { Scrabble } from "./Scrabble";
 export { HandEmoji } from "./HandEmoji";
 export { HandEmojiWatch } from "./HandEmojiWatch";
 export { HandEmojiFlag } from "./HandEmojiFlag";
+export { ArrowCircleDown } from "./ArrowCircleDown";
+export { RandomColorHand } from "./RandomColorHand";
+export { Label1, Label2, Label3 } from "./Label";

@@ -20,7 +20,7 @@ export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="container">
+    <header>
       <nav className="flex justify-between py-6">
         <div className="flex items-center gap-x-6">
           <Logo />

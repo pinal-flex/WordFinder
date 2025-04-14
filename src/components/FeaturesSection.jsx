@@ -25,9 +25,9 @@ const features = [
   },
 ];
 
-export default function Features() {
+export default function FeaturesSection() {
   return (
-    <div className="container py-16">
+    <div className="py-0 sm:py-16">
       <div className="py-7 sm:py-16 px-3.5 sm:px-14 bg-sky-50 rounded-4xl">
         <div className="text-center mx-auto max-w-xl">
           <Text variant="3xl" weight="extrabold" className="text-indigo-950">
@@ -41,11 +41,25 @@ export default function Features() {
         </div>
         <div className="flex flex-col xl:flex-row mt-5 sm:mt-12 gap-5">
           {features.map((feature) => (
-            <div key={feature.id} className="p-6 bg-white rounded-2xl">
-              <div className="px-16 sm:px-24">{feature.icon}</div>
-              <div className="mt-12">
-                <Text>{feature.name}</Text>
-                <Text>{feature.description}</Text>
+            <div key={feature.id} className="px-6 py-7 bg-white rounded-2xl">
+              <div className="flex justify-center px-3 sm:px-24">
+                {feature.icon}
+              </div>
+              <div className="mt-12 text-center">
+                <Text
+                  variant="xl"
+                  weight="bold"
+                  className="tracking-3 text-indigo-950"
+                >
+                  {feature.name}
+                </Text>
+                <Text
+                  variant="sm"
+                  weight="medium"
+                  className="mt-5 text-zinc-600"
+                >
+                  {feature.description}
+                </Text>
               </div>
             </div>
           ))}

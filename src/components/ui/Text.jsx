@@ -5,10 +5,10 @@ import { cn } from "../../lib/utils";
 export const textVariants = cva("", {
   variants: {
     variant: {
-      sm: "text-sm",
+      sm: "text-xs sm:text-sm",
       base: "text-sm sm:text-base",
       lg: "text-sm sm:text-lg",
-      xl: "text-xl",
+      xl: "text-lg sm:text-xl",
       "3xl": "text-2xl sm:text-3xl",
       "4xl": "text-2xl sm:text-4xl",
       "5xl": "",
@@ -18,6 +18,7 @@ export const textVariants = cva("", {
       normal: "font-normal",
       medium: "font-medium",
       semibold: "font-semibold",
+      bold: "font-bold",
       extrabold: "font-extrabold",
     },
   },

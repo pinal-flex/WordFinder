@@ -1,4 +1,4 @@
-export function HandEmojiWatch() {
+export function Simplicity({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +6,7 @@ export function HandEmojiWatch() {
       height="120"
       viewBox="0 0 96 120"
       fill="none"
+      className={className}
     >
       <g clipPath="url(#clip0_1_492)">
         <path

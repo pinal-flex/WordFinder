@@ -1,5 +1,5 @@
 import { Text } from "./ui/Text";
-import { HandEmoji, HandEmojiFlag, HandEmojiWatch } from "../icons";
+import { ReadyHand, TimeHand, Simplicity } from "../icons";
 
 const features = [
   {
@@ -7,21 +7,21 @@ const features = [
     name: "All prepared",
     description:
       "Quickly create words from your letters, ace Scrabble, and boost your language skills effortlessly.",
-    icon: <HandEmoji />,
+    icon: <ReadyHand className="w-[120px] h-[97px]" />,
   },
   {
     id: 2,
     name: "Saves Time",
     description:
       "Quickly create words from your letters, ace Scrabble, and boost your language skills effortlessly.",
-    icon: <HandEmojiWatch />,
+    icon: <TimeHand className="w-[77px] h-[96px]" />,
   },
   {
     id: 3,
     name: "It's simple",
     description:
       "Quickly create words from your letters, ace Scrabble, and boost your language skills effortlessly.",
-    icon: <HandEmojiFlag />,
+    icon: <Simplicity className="w-[77px] h-[96px]" />,
   },
 ];
 

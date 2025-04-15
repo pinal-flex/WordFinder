@@ -48,8 +48,8 @@ export default function WorkFlowSection() {
           </div>
         </div>
         <div className="flex flex-col xl:flex-row pt-12 sm:pt-16 gap-8">
-          {workflowSteps.map((workflow) => (
-            <div key={workflow.icon}>
+          {workflowSteps.map((workflow, index) => (
+            <div key={index}>
               <div>{workflow.icon}</div>
               <div className="pt-4 sm:pt-7">
                 <Text variant="base" weight="bold" className="text-indigo-950">

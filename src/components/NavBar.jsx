@@ -3,9 +3,10 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Logo, Search, Menu, DropDown } from "../icons";
 import NavLink from "./ui/NavLink";
+import Button from "./ui/Button";
 
 const navigation = [
-  { name: "CrossWord", href: "#" },
+  { name: "Crossword", href: "#" },
   { name: "Scrabble", href: "#" },
   { name: "Words with Friends", href: "#" },
   { name: "Unscramble", href: "#" },
@@ -44,12 +45,13 @@ export default function NavBar() {
           </NavLink>
           <Search fillColor="#615D6C" />
 
-          <button
+          <Button
+          size="icon"
             onClick={() => setMobileMenuOpen(true)}
             className="lg:hidden focus:outline-none"
           >
             <Menu />
-          </button>
+          </Button>
         </div>
       </nav>
 
@@ -62,13 +64,14 @@ export default function NavBar() {
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Logo />
-            <button
+            <Button
+            size="icon"
               type="button"
               onClick={() => setMobileMenuOpen(false)}
               className="-m-2.5 inline-flex items-center justify-center"
             >
-              <XMarkIcon className="h-6 w-6 text-zinc-600" />
-            </button>
+              <XMarkIcon className="text-zinc-600" />
+            </Button>
           </div>
 
           <div className="mt-6 flow-root">

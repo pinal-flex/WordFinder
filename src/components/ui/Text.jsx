@@ -9,6 +9,7 @@ export const textVariants = cva("", {
       base: "text-sm sm:text-base",
       lg: "text-sm sm:text-lg",
       xl: "text-lg sm:text-xl",
+      "2xl": "text-2xl",
       "3xl": "text-2xl sm:text-3xl",
       "4xl": "text-2xl sm:text-4xl",
       "5xl": "",

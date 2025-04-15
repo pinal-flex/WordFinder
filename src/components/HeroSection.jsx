@@ -1,5 +1,6 @@
 import { DropDown, QuestionMark, Search } from "../icons";
 import { Text } from "./ui/Text";
+import Button from "./ui/Button";
 const buttons = [
   { text: "Starts", icon: null },
   { text: "Ends", icon: null },
@@ -20,7 +21,7 @@ export default function HeroSection() {
             <Text
               type="h1"
               variant="6xl"
-              weight="semibold"
+              weight="extrabold"
               className="text-neutral-900/40 mx-3 sm:mx-0"
             >
               <span className="text-white">
@@ -40,9 +41,14 @@ export default function HeroSection() {
             </Text>
             <div className="bg-white rounded-2xl mt-7 sm:mt-12 p-4 sm:p-5 mx-3 sm:mx-0">
               <div className="flex justify-between items-center mb-3">
-                <Text variant="sm" weight="medium" className="text-zinc-600">
-                  Enter your letters
-                </Text>
+                <input
+                  name="name"
+                  type="name"
+                  placeholder="Enter your letters"
+                  required
+                  autoComplete="name"
+                  className="placeholder:text-zinc-600 w-full pr-2.5 text-sm font-medium outline-1 outline-white/10 focus:outline-2"
+                />
                 <div className="flex items-center gap-3">
                   <div className="border-r border-zinc-300 pr-4">
                     <QuestionMark />
@@ -54,17 +60,17 @@ export default function HeroSection() {
               <div className="border-t border-zinc-300 mt-4 pt-4">
                 <div className="flex flex-wrap whitespace-nowrap gap-2 sm:flex-nowrap">
                   {buttons.map((button, index) => (
-                    <button
+                    <Button
                       key={index}
-                      className="flex items-center text-sm text-zinc-600 border border-gray-300 rounded-xl px-4 py-2 w-48 sm:w-full
-      last:w-full last:sm:w-auto last:justify-between">
-                      <Text variant="sm" weight="medium">
-                        {button.text}
-                      </Text>
+                      variant="outline"
+                      size="lg"
+                      className="flex items-center text-zinc-600 rounded-xl w-48 sm:w-full last:w-full last:sm:w-auto last:justify-between"
+                    >
+                      {button.text}
                       {button.icon && (
                         <span className="ml-1.5">{button.icon}</span>
                       )}
-                    </button>
+                    </Button>
                   ))}
                 </div>
               </div>
